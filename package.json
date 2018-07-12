@@ -1,0 +1,29 @@
+{
+  "name": "express-http",
+  "version": "1.0.0",
+  "description": "manejo del protocolo http",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnserrano15/expressHttp.git"
+  },
+  "keywords": [],
+  "author": "John Serrano <jandreys15@gmail.com> (https://twitter.com/Jandrey15)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnserrano15/expressHttp/issues"
+  },
+  "homepage": "https://github.com/johnserrano15/expressHttp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

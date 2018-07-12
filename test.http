@@ -1,0 +1,44 @@
+@host = localhost:8080
+@contentType = application/json
+
+###
+
+@name = John-Andrey
+@author = John Serrano
+@book = Biblia
+
+// http get 
+GET http://localhost:8080
+
+###
+
+// http get Query Strings
+GET http://localhost:8080
+    ?name=john
+
+###
+
+// Get params
+GET http://{{host}}/authors/john/biblia
+
+###
+
+GET http://{{host}}/authors/{{author}}/{{book}}
+
+###
+
+// Get params + Query Strings
+
+GET http://{{host}}/authors/{{author}}
+    ?book=JavaScript
+
+###
+
+POST http://{{host}}/response-poll
+Content-Type: {{contentType}}
+
+{
+  "first_name": "John Andrey",
+  "last_name": "Serrano Caselles",
+  "preference": "Café"
+}

@@ -1,0 +1,22 @@
+doctype html
+html(lang="es")
+  head
+    title!= title
+  body
+    h1!= message
+    h1 Por favor, responde las siguientes preguntas:
+    form(action="/responder_encuesta", method="post")
+      div Primer Nombre:
+      input(type="text", name="primernombre", value="", required)
+    
+      div Apellido:
+      input(type="text", name="apellido", value="", required)
+    
+      div ¿Qué prefieres?
+      input(type="radio", name="preferencia", id="preferencia1", value="café", required)
+      label(for="preferencia1") Café
+      input(type="radio", name="preferencia", id="preferencia2", value="té")
+      label(for="preferencia2") Té
+
+      br
+      input(type="submit", value="Submit")
