@@ -5,15 +5,15 @@ html(lang="es")
   body
     h1!= message
     h1 Por favor, responde las siguientes preguntas:
-    form(action="/responder_encuesta", method="post")
+    form(action="/response-poll", method="post")
       div Primer Nombre:
-      input(type="text", name="primernombre", value="", required)
+      input(type="text", name="first_name", value="", required)
     
       div Apellido:
-      input(type="text", name="apellido", value="", required)
+      input(type="text", name="last_name", value="", required)
     
       div ¿Qué prefieres?
-      input(type="radio", name="preferencia", id="preferencia1", value="café", required)
+      input(type="radio", name="preference", id="preferencia1", value="café", required)
       label(for="preferencia1") Café
       input(type="radio", name="preferencia", id="preferencia2", value="té")
       label(for="preferencia2") Té
